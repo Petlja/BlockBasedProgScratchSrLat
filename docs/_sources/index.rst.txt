@@ -1,5 +1,5 @@
 =========================================
-Programiranje u Skrecu - osnovni koncepti
+Programiranje u Skreču - osnovni koncepti
 =========================================
 
 Ovaj interaktivno prirucnik bice od pomoci u savladavanju osnova programiranja u vizuelnom programskom jeziku Skrec (Scratch).
