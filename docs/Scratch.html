@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Vizuelni programski jezik Skreč &#8212; Blokovsko programiranje u Skreču</title>
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="_static/notes.css" />
+    <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/petlja.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/runestonebase.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="_static/codemirror.js"></script>
+    <script type="text/javascript" src="_static/xml.js"></script>
+    <script type="text/javascript" src="_static/css.js"></script>
+    <script type="text/javascript" src="_static/python.js"></script>
+    <script type="text/javascript" src="_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="_static/javascript.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_static/activecode.js"></script>
+    <script type="text/javascript" src="_static/clike.js"></script>
+    <script type="text/javascript" src="_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="_static/animationbase.js"></script>
+    <script type="text/javascript" src="_static/mchoice.js"></script>
+    <script type="text/javascript" src="_static/timedmc.js"></script>
+    <script type="text/javascript" src="_static/timed.js"></script>
+    <script type="text/javascript" src="_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/clickable.js"></script>
+    <script type="text/javascript" src="_static/timedclickable.js"></script>
+    <script type="text/javascript" src="_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="_static/pytutor.js"></script>
+    <script type="text/javascript" src="_static/codelens.js"></script>
+    <script type="text/javascript" src="_static/datafile.js"></script>
+    <script type="text/javascript" src="_static/dragndrop.js"></script>
+    <script type="text/javascript" src="_static/timeddnd.js"></script>
+    <script type="text/javascript" src="_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/fitb.js"></script>
+    <script type="text/javascript" src="_static/timedfitb.js"></script>
+    <script type="text/javascript" src="_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/matrixeq.js"></script>
+    <script type="text/javascript" src="_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="_static/parsons.js"></script>
+    <script type="text/javascript" src="_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/timedparsons.js"></script>
+    <script type="text/javascript" src="_static/poll.js"></script>
+    <script type="text/javascript" src="_static/reveal.js"></script>
+    <script type="text/javascript" src="_static/shortanswer.js"></script>
+    <script type="text/javascript" src="_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="_static/showEval.js"></script>
+    <script type="text/javascript" src="_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="_static/karelCorner.js"></script>
+    <script type="text/javascript" src="_static/karelRobot.js"></script>
+    <script type="text/javascript" src="_static/karelWorld.js"></script>
+    <script type="text/javascript" src="_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="_static/karelUI.js"></script>
+    <script type="text/javascript" src="_static/karel.js"></script>
+    <script type="text/javascript" src="_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/notes.js"></script>
+    <script type="text/javascript" src="_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="_static/blockly/blockly_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/blocks_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/python_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/msg-sr.js"></script>
+    <script type="text/javascript" src="_static/blockpy/utilities.js"></script>
+    <script type="text/javascript" src="_static/blockpy/python_errors.js"></script>
+    <script type="text/javascript" src="_static/blockpy/ast_node_visitor.js"></script>
+    <script type="text/javascript" src="_static/blockpy/abstract_interpreter.js"></script>
+    <script type="text/javascript" src="_static/blockpy/pytifa.js"></script>
+    <script type="text/javascript" src="_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script type="text/javascript" src="_static/blockpy/python_to_blockly.js"></script>
+    <script type="text/javascript" src="_static/blockpy/imported.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/class.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/comment.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/comprehensions.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/dict.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/if.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/io.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/lists.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/sets.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/loops.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/parking.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/tuple.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/turtles.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/text.js"></script>
+    <script type="text/javascript" src="_static/blockpy-modal.js"></script>
+    <script type="text/javascript" src="_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="_static/rangy-core.js"></script>
+    <script type="text/javascript" src="_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="_static/user-highlights.js"></script>
+    <script type="text/javascript" src="_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Blokovi" href="Blokovi.html" />
+    <link rel="prev" title="Programiranje u Skrecu - osnovni koncepti" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Scratch3int';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'Scratch3int';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '_images/';
+  eBookConfig.staticDir = '_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="./">Blokovsko programiranje u Skreču</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-8 col-md-offset-2" id="main-content">
+  
+  <div class="section" id="vizuelni-programski-jezik-skrec">
+<h1>Vizuelni programski jezik Skreč<a class="headerlink" href="#vizuelni-programski-jezik-skrec" title="Permalink to this headline">¶</a></h1>
+<p>Skreč je vizuelni programski jezik napravljen za decu. Programiranje u Skreču ne zahteva pisanje naredbi. Za izradu programa, dovoljno je da, u odgovarajućem redosledu složimo <strong>blokove</strong> (slično kao pazle ili kockice).</p>
+<dl class="simple">
+<dt>Rezultat izvršavanja programa koji sadrži samo naredbu <img alt="BWelcome" src="_images/BWelcome.png" /> izgleda ovako: <img alt="Welcome" src="_images/Welcome.png" />.</dt><dd></dd>
+</dl>
+<p>Skreč (verziju 3) možemo da ga koristimo na dva načina:</p>
+<ul class="simple">
+<li><p>preuzimanjem instalacione datoteke sa adrese <a href="https://scratch.mit.edu/download" target="_blank">https://scratch.mit.edu/download</a> i instaliranjem na lični digitalni uređaj (desktop verzija programa);</p></li>
+<li><p>na adresi <a href="https://scratch.mit.edu" target="_blank">https://scratch.mit.edu</a> (onlajn verzija programa).</p></li>
+</ul>
+<p>Oba načina imaju svoje prednosti i mane.</p>
+<p>Ako instaliramo Skreč desktop na lični digitalni uređaj radićemo udobnije i brže, pre svega zato što nećemo zavisiti od kvaliteta internet veze, kao ni od sporadičnog održavanja Skreč onlajn platforme (ona je tada nedostupna.</p>
+<p>Ako programiramo u okviru Skreč onlajn platforme, neophodno je napravimo svoj nalog. Uz nalog dolazi mogućnost da na Skreć onlajn platformi čuvamo kreirane programe i pristupamo im sa bilo kog uređaja povezanog na internet. Pored ove pogodnosti, onlajn verzija Skreča nudi ti da sačuvaš delove programa u <strong>Rancu (Backpack)</strong> i ponovo ih koristiš kada ti zatrebaju. Dodatnu prednost predstavlja i mogućnost objavljivanja programa. Nakon objavljivanja, tvoj program postaje vidljiv drugim korisnicima Skreča, koje nazivamo <strong>Skrečerima</strong>. Kao što oni mogu da vide i remiksuju (prerade) tvoje programe (projekte) i ti možeš da vidiš i remiksuješ njihove. Na platformi možeš i da potražiš pomoć. Pomoći drugim Skrečerima potpuno je u duhu ove onlajn zajednice.</p>
+<p>Radno okruženje u obe verzije Skreča izgleda skoro istovetno, s tim da onlajn verzija sadrži sve elemente instalirane verzije i još neke funkcionalnosti. Na ovoj stranici, prikazaćemo elemente Skreč onlajn platforme.</p>
+<div class="section" id="skrec-onlajn-platforma">
+<h2>Skreč onlajn platforma<a class="headerlink" href="#skrec-onlajn-platforma" title="Permalink to this headline">¶</a></h2>
+<p>Programi koje kreiramo na onlajn Skreč platformi nazivamo <em>projektima</em>. Projekte kreiramo klikom na dugme <strong>Create</strong>. Otvoriće se radno okruženje sledećeg izgleda:</p>
+<img alt="_images/RadnoOkruzenje.png" class="align-center" src="_images/RadnoOkruzenje.png" />
+<ol class="arabic simple">
+<li><p>Linija menija;</p></li>
+<li><p>Kartice <strong>Programiranje (Code)</strong>, <strong>Kostimi (Costumes)</strong> i <strong>Zvukovi (Sounds)</strong>;</p></li>
+<li><p>Izbor kategorija blokova koje je moguće dodati na radnu površinu;</p></li>
+<li><p>Prostor za kreiranje programa (slaganje blokova) koji se odnosi na aktivnog lika ili pozornicu;</p></li>
+<li><p>Ranac (<em>Backpack</em>);</p></li>
+<li><p>Lista likova sa osnovnim parametrima (osobinama) - aktivani lik označen je plavim okvirom;</p></li>
+<li><p>Lista pozadina pozornice;</p></li>
+<li><p>Pozornica.</p></li>
+</ol>
+<dl class="simple">
+<dt><img alt="SLogo" src="_images/SLogo.png" /> Zaglavlje radnog okruženja zauzima <em>Linija menija</em>.</dt><dd></dd>
+</dl>
+<img alt="_images/LinijaMenija.png" class="align-center" src="_images/LinijaMenija.png" />
+<ol class="arabic simple">
+<li><p>Klikom na <strong>Scratch</strong> otvoriće se stranica naloga korisnika koji je trenutno prijavljen na platformu (u našem slučaju to je stranica naloga Petlja). U okviru ove stranice moguće je pogledati relevantna obaveštenja, novosti, predloge projekata drugih Skrečera, ali i sve poruke koje je vlasnik naloga dobio (<strong>Messages</strong>), kao i programe koje je napravio (<strong>My Stuff</strong>).</p></li>
+<li><p>Klikom na ikonicu zemljine kugle otvoriće se padajuća lista iz koje treba da odaberemo jezik na kome će biti prikazani svi elementi radnog okruženja;</p></li>
+<li><p><strong>File</strong> nudi nekoliko važnih opcija: pokretanje novog projekta (<strong>New</strong>), čuvanje projekta (<strong>Save now</strong>), čuvanje projekta kao kopije postojećeg (<strong>Save as a copy</strong>), učitavanje programa sa ličnog računara (<strong>Load from your computer</strong>) i preuzimanje projekta na lični računar (<strong>Save to your computer</strong>);</p></li>
+<li><p><strong>Edit</strong> omogućava da povratimo izbrisani lik sa svim njegovim blokovima (<strong>Restore</strong>), kao i da uključimo turbo režim izvršavanja programa (<strong>Turn on turbo mode</strong>). Ako ne želimo da se program izvršava brzo, dovoljno je da turbo režim isključimo (<strong>Turn off turbo mode</strong>);</p></li>
+<li><p>Klikom na <strong>Tutorials</strong> otvoriće se stranica u okviru koje možemo da odaberemo neko od uputstava za izradu programa u Skreču;</p></li>
+<li><p>U ovo polje unosimo naziv projekta;</p></li>
+<li><p>Klikom na dugme (<strong>Share</strong>) činimo da naš projekat bude javno dostupan drugim Skrečerima. Tada se formira stranica projekta;</p></li>
+<li><p><strong>See project page</strong> vodi nas na stranicu našeg projekta u okviru koje treba da unesemo: uputstva za korišćenje programa (<strong>Instructions</strong>), napomene i informacije o kreatorima (<strong>Notes and credits</strong>). Na ovoj stranici možemo da pokrenemo izvršavanje grama, kao i da se vratimo u radno okruženje za programiranje, klikom na dugme <strong>See inside</strong>.</p></li>
+<li><p>Klikom na ikonicu fascikle (<strong>My Stuff</strong>) otvoriće se stranica sa svim programima koje je prijavljeni korisnika napravio.</p></li>
+</ol>
+<p><img alt="SLogo" src="_images/SLogo.png" /> Centralni deo radnog okruženja zauzimaju kartice <em>Programiranje (Code)</em>, <em>Kostimi (Costumes)</em> i <em>Zvukovi (Sounds)</em>.</p>
+<a class="reference internal image-reference" href="_images/RadnoOkruzenje.gif"><img alt="_images/RadnoOkruzenje.gif" class="align-center" src="_images/RadnoOkruzenje.gif" style="width: 800px;" /></a>
+<ol class="arabic simple">
+<li><p>Kartica <em>Programiranje (Code)</em> sadrži kategorije blokova sa izlistanim blokovima koji im pripadaju (boja bloka odgovara boji kategorije kojoj pripada) koje se odnose na aktivnog lika i prostor za programiranje u koji se blokovi postavljaju prevlačenjem;</p></li>
+<li><p>Kartica <em>Kostimi (Costumes)</em> sadrži editor sa alatima za dodavanje, brisanje i prilagođavanje kostima aktivnog lika;</p></li>
+<li><p>Kartica <em>Zvukovi (Sounds)</em> sadrži editor sa alatima za dodavanje, brisanje, reprodukcija i osnovnu obradu zvučnog zapisa.</p></li>
+</ol>
+<p><img alt="SLogo" src="_images/SLogo.png" /> Donji desni ugao pozornice rezervisan je za dodavanje/brisanje likova i pozadina pozornice. Likove i pozadine pozornice dodajemo izborom iz biblioteke likova/pozadina (<strong>Choose a Sprite/Backdrop</strong>), možemo da ih nacrtamo (<strong>Paint</strong>), da prepustimo Skreču da nas iznenadi i odabere lika/pozadinu umesto nas (<strong>Surprise</strong>), te da ih učitamo sa ličnog računara(<strong>Upload Sprite/Backdrop</strong>).</p>
+<a class="reference internal image-reference" href="_images/LikoviPozadine.png"><img alt="_images/LikoviPozadine.png" class="align-center" src="_images/LikoviPozadine.png" style="width: 800px;" /></a>
+<p><img alt="SLogo" src="_images/SLogo.png" /> <em>Pozornica</em> je prostor u okviru koga se program izvršava. Široka je 480 koraka (piksela) i visoka 360 koraka (piksela). Položaj likova na pozornici određen je sa dve vrednosti <strong>x:</strong> i <strong>y:</strong>.</p>
+<ul class="simple">
+<li><p>Vrednost <strong>x:</strong> određuje položaj lika po širini pozornice (levo ili desno);</p></li>
+<li><p>Vrednost <strong>y:</strong> određuje položaj lika po visini pozornice (gore ili dole);</p></li>
+</ul>
+<img alt="_images/XYBoja.png" class="align-center" src="_images/XYBoja.png" />
+<p>Dakle, vrednosti <strong>x:</strong> i <strong>y:</strong> zavise od mesta na kome se lik nalazi. Ako želimo da se naš lik nađe u centru (središtu) pozornice, vrednosti treba da budu: <strong>x: 0</strong> i <strong>y: 0</strong>. Informacije o tome gde se lik trenutno nalazi vidljive su u listi likova, u okviru njegovih parametara.</p>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="OkruzenjeZadatak1">
+            <p>Q-12: Pažljivo pogledaj informacije o položaju lika na pozornici. Gde se lik nalazi?</p>
+<img alt="_images/OkruzenjeZadatak1.png" class="align-center" src="_images/OkruzenjeZadatak1.png" />
+
+            <li data-component="answer" data-correct id="OkruzenjeZadatak1_opt_a">U gornjem levom delu pozornice.</li><li data-component="feedback" id="OkruzenjeZadatak1_opt_a">Bravo! Odlično razumeš kako vrednosti X: i Y: određuju položaj lika na pozornici!</li>
+            
+            <li data-component="answer"  id="OkruzenjeZadatak1_opt_b">U donjem levom delu pozornice.</li><li data-component="feedback" id="OkruzenjeZadatak1_opt_b">Prouči sliku na kojoj smo pozornicu podelili na četiri dela i obojili ih različitim bojama. Uočićeš da su, u zelenom delu pozornice vrednosti X > 0 i Y > 0; u crvenom delu pozornice vrednosti X < 0 i Y > 0; u plavom delu pozornice vrednosti X < 0 i Y < 0; u žutom delu pozornice vrednosti X > 0 i Y < 0. Da li sada možeš tačno da odgovoriš na naše pitanje?</li>
+            
+            <li data-component="answer"  id="OkruzenjeZadatak1_opt_c">U gornjem desnom delu pozornice.</li><li data-component="feedback" id="OkruzenjeZadatak1_opt_c">Prouči sliku na kojoj smo pozornicu podelili na četiri dela i obojili ih različitim bojama. Uočićeš da su, u zelenom delu pozornice vrednosti X > 0 i Y > 0; u crvenom delu pozornice vrednosti X < 0 i Y > 0; u plavom delu pozornice vrednosti X < 0 i Y < 0; u žutom delu pozornice vrednosti X > 0 i Y < 0. Da li sada možeš tačno da odgovoriš na naše pitanje?</li>
+            
+            <li data-component="answer"  id="OkruzenjeZadatak1_opt_d">U donjem desnom delu pozornice.</li><li data-component="feedback" id="OkruzenjeZadatak1_opt_d">Prouči sliku na kojoj smo pozornicu podelili na četiri dela i obojili ih različitim bojama. Uočićeš da su, u zelenom delu pozornice vrednosti X > 0 i Y > 0; u crvenom delu pozornice vrednosti X < 0 i Y > 0; u plavom delu pozornice vrednosti X < 0 i Y < 0; u žutom delu pozornice vrednosti X > 0 i Y < 0. Da li sada možeš tačno da odgovoriš na naše pitanje?</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="ucesce-u-skrec-onlajn-zajednici">
+<h2>Učešće u Skreč onlajn zajednici<a class="headerlink" href="#ucesce-u-skrec-onlajn-zajednici" title="Permalink to this headline">¶</a></h2>
+<p>Bilo da smo program (projekat) kreirali na onlajn Skreč platformi ili u njegovoj desktop verziji, možemo da ga učinimo dostupnim drugim ljudima zainteresovanim za programiranje u ovom vizuelnom programskom jeziku.</p>
+<p>U oba slučaja, neophodno je da:</p>
+<ul class="simple">
+<li><p>posedujemo nalog na Skreč onlajn platformi;</p></li>
+<li><p>program bude postavljen na platformu (programe nastale u oflajn verziji Skreča potrebno je sa učitamo na platformu: <strong>File</strong> - <strong>Load from your computer</strong>);</p></li>
+<li><p>objavimo projekat klikom na dugme <img alt="Share" src="_images/Share.png" />.</p></li>
+</ul>
+<p>Da bi drugi korisnici Skreča dobro razumeli i koristili naše programe, važno je da ih detaljno opišemo na naslovnoj stranici projekta. Pristupamo joj klikom na <img alt="PPage" src="_images/PPage.png" />.</p>
+<img alt="_images/ProjectPage.png" class="align-center" src="_images/ProjectPage.png" />
+<p>Drugi korisnici Skreča stranicu nešeg projekta vide ovako:</p>
+<img alt="_images/Remix.png" class="align-center" src="_images/Remix.png" />
+<p>Uočavamo da bilo koji korisnik Skreč onlajn platforme može da remiksuje naš projekat. Dovoljno je da klikne na dugme <img alt="BRemix" src="_images/BRemix.png" />, nakon čega može da dograđuje, menja i objavljuje novonastali program. Informacije o broju pregleda projeka, remiklsa, lajkova… vidljiv je na početnoj stranici.</p>
+<p>Skreč onlajn platforma posvećena je očuvanju duha Skrečerske zajednice. Klikom na dugme <img alt="Report" src="_images/Report.png" /> korisnici mogu da prijave neprimerene sadržaje, komentare, diskusije. Nakon primljene prijave, Skreč tim pregleda problematični sadržaj i, ako nije u skladu sa pravilima ponašanja (<a class="reference external" href="https://en.scratch-wiki.info/wiki/Community_Guidelines">https://en.scratch-wiki.info/wiki/Community_Guidelines</a>), uklanja ga sa platforme.</p>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+        <li id="relations-prev" title='Previous chapter - Programiranje u Skrecu - osnovni koncepti' data-toggle="tooltip"><a href="index.html">Previous chapter</a></li>
+    
+        <li id="relations-next" title='Next chapter - Blokovi' data-toggle="tooltip"><a href="Blokovi.html">Next chapter</a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Programiranje u Skrecu - osnovni koncepti' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Blokovi' data-toggle="tooltip"><a href="Blokovi.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="text-center">&copy; 2019 <a href="https://petlja.org">Petlja.org</a> 
+                  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align: text-bottom" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+                  
+                  (Created using  <a href="https://pypi.org/project/Sphinx/">Sphinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,88 @@
+Blokovi
+=======
+
+Računarski programi su skupovi naredbi kojima objašnjavamo računaru kako da uradi određeni zadatak ili reši nekakav problem. S obzirom na to da je većina programskih jezika tekstualna, programeri najčešće kucaju naredbe. 
+
+U vizuelnom programskom jeziku Skreč, naredbe ne pišemo, već koristimo blokove koji ih predstavljaju. Programe kreiramo nizanjem (slaganjem) blokova u odgovarajućem redosledu.
+
+Vrste blokova u Skreču
+----------------------
+
+U Skreču razlikujemo 4 vrste blokova: 
+
+.. image:: ../_images/blokovi/4Bloka.png   
+   :align: center
+
+1. Blokovi naredbi;
+2. Blokovi koji povezuju događaje sa izvršavanjem programa;
+3. Blokovi koji kontrolišu izvršavanje programa;
+4. Blokovi koji saopštavaju neku vrednost (funkcijski blokovi).
+
+
+Blokovi naredbi
+~~~~~~~~~~~~~~~
+
+Blokovi naredbi imaju udubljenja u gornjem delu i ispupčenja u donjem. Dizajnirani su tako da omogućavaju međusobno spajanje (povezivanje). Dovoljno je da, iz odgovarajuće kategorije blokova, prevučemo blok naredbi u prostor za programiranje i spojimo ga sa blokovima koji su u tom prostoru već nalaze. Spajanje blokova podseća na magnetno privlačenje - čim udubljenje bloka naredbi postavimo dovoljno blizu nekog drugog bloka, on će se "zalepiti" za njega nastavljajući započeti niz. Ispupčenje omogućava novim blokovima da se nadovežu.
+
+Blokovi koji povezuju događaje sa izvršavanjem programa
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. |ZZ| image:: ../_images/blokovi/ZZ.png
+.. |R10M10| image:: ../_images/blokovi/R10M10.png
+.. |Costume| image:: ../_images/blokovi/Costume.png
+.. |XP| image:: ../_images/blokovi/XP.png
+.. |Touch| image:: ../_images/blokovi/Touch.png
+.. |Touching| image:: ../_images/blokovi/Touching.png
+.. |Sabiranje| image:: ../_images/blokovi/Sabiranje.png
+.. |WU| image:: ../_images/blokovi/WU.png
+.. |Say| image:: ../_images/blokovi/Say.png
+.. |SayE| image:: ../_images/blokovi/SayE.png
+.. |WUE| image:: ../_images/blokovi/WUE.png
+
+Ova vrsta blokova ima "šešir". To znači da se oni mogu naći samo na početku niza blokova. Slaganje skripte obično započinjemo upravo ovim blokovima. Na donjoj strani imaju ispupčenje koje obezbeđuje nadovezivanje novih blokova.
+
+Važno je da znaš da ovi blokovi predstavljaju događaje koji predstavljaju okidač za izvršavanje naredbi koje se ispod njih nalaze. Na primer, blok |ZZ| obezbeđuje da se blokovi naredbi nanizani na njega izvrše tek kada bude kliknuto na zelenu zastavicu, koja se nalazi iznad pozornice.
+
+Blokovi koji kontrolišu izvršavanje programa
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Slično blokovima naredbi, blokovi koji kontrolišu izvršavanje programa imaju udubljenje na gornjoj i ispupčenje na donjoj strani. Možemo da ih nadovežemo na druge blokove, kako i da nove blokove dodamo ispod njih. 
+
+Obe blokove karakteriše i sposobnost da u sebe prime druge blokove. Na primer, skripta |R10M10| obezbeđuje da se naš lik kreće 10 puta po 10 koraka.
+
+Blokovi koji saopštavaju neku vrednost (funkcijski blokovi)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Osim po obliku, od ostalih blokova razlikuju se i po tome što ne mogu samostalno da budu deo skripte. Drugim rečima, oni se **ne nadovezuju** na druge blokove, već čine njihov sastavni deo. 
+
+Funkcijski blokovi sadrže neku vrednost. Izgled im zavisi od tipa podatka koji sadrže:
+
+•	zaobljeni blokovi sadrže broj |XP| ili string |Costume|;
+•	uglasti blokovi sadrže vrednost *Tačno (true)* ili *Netačno (false)* |Touch|.
+
+Blokovi naredbi i blokovi koji kontrolišu izvršavanje programa sadrže prostore u koje je moguće postaviti funkcijske blokove. Ti prostori mogu biti ovalnog ili šestougaonog oblika. 
+
+.. |Vazno| image:: ../_images/Vazno.png
+
+.. infonote::
+
+    |Vazno|   U blokove sa ovalnim prostorom |SayE| moguće je umetnuti i zaobljene i uglaste funkcijske blokove |Say|, dok je u blokove sa šestougaonim prostorom |WUE| moguće umetnuti samo uglaste funkcijske blokove |WU|.
+
+
+Uz ove blokove, u okviru kategorija u kojima se nalaze, postoji polje koje je moguće označiti (štiklirati). Označavanjem ovog polja, vrednosti koje čuvaju funkcijski blokovi postaju vidljive na pozornici.
+
+.. image:: ../_images/blokovi/Touch.png   
+   :align: center
+
+Vrednost koju sadrže funkcijski blokovi možemo da vidimo i klikom na njih. Na primer, blok |Touching| čuva vrednost *false* zato što naš lik ne dodiruje prikazanu boju, dok blok |Sabiranje| čuva vrednost *22*, zato što je to zbir navedenih brojeva).
+
+.. mchoice:: BlokoviZadatak1
+   :answer_a: Kada kliknemo na zelenu zastavicu, lik će izgovoriti "true".
+   :answer_b: Kada kliknemo na zelenu zastavicu, lik će izgovoriti "false".
+   :feedback_a: Potpuno si u pravu!    
+   :feedback_b: Uglasti funkcijski blok vraća vrednost Tačno (true) ili Netačno (false). Kako je tvrđenje 60>50 tačno, lik će izgovoriti "true".
+   :correct: a
+
+   Analiziraj skriptu na slici. Označi rezultat izvršavanja programa.
+     .. image:: ../_images/blokovi/6050.png  
+	:align: center

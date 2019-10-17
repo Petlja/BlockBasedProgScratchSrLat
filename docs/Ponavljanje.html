@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ponavljanje &#8212; Blokovsko programiranje u Skreču</title>
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="_static/notes.css" />
+    <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/petlja.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/runestonebase.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="_static/codemirror.js"></script>
+    <script type="text/javascript" src="_static/xml.js"></script>
+    <script type="text/javascript" src="_static/css.js"></script>
+    <script type="text/javascript" src="_static/python.js"></script>
+    <script type="text/javascript" src="_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="_static/javascript.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_static/activecode.js"></script>
+    <script type="text/javascript" src="_static/clike.js"></script>
+    <script type="text/javascript" src="_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="_static/animationbase.js"></script>
+    <script type="text/javascript" src="_static/mchoice.js"></script>
+    <script type="text/javascript" src="_static/timedmc.js"></script>
+    <script type="text/javascript" src="_static/timed.js"></script>
+    <script type="text/javascript" src="_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/clickable.js"></script>
+    <script type="text/javascript" src="_static/timedclickable.js"></script>
+    <script type="text/javascript" src="_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="_static/pytutor.js"></script>
+    <script type="text/javascript" src="_static/codelens.js"></script>
+    <script type="text/javascript" src="_static/datafile.js"></script>
+    <script type="text/javascript" src="_static/dragndrop.js"></script>
+    <script type="text/javascript" src="_static/timeddnd.js"></script>
+    <script type="text/javascript" src="_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/fitb.js"></script>
+    <script type="text/javascript" src="_static/timedfitb.js"></script>
+    <script type="text/javascript" src="_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/matrixeq.js"></script>
+    <script type="text/javascript" src="_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="_static/parsons.js"></script>
+    <script type="text/javascript" src="_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/timedparsons.js"></script>
+    <script type="text/javascript" src="_static/poll.js"></script>
+    <script type="text/javascript" src="_static/reveal.js"></script>
+    <script type="text/javascript" src="_static/shortanswer.js"></script>
+    <script type="text/javascript" src="_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="_static/showEval.js"></script>
+    <script type="text/javascript" src="_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="_static/karelCorner.js"></script>
+    <script type="text/javascript" src="_static/karelRobot.js"></script>
+    <script type="text/javascript" src="_static/karelWorld.js"></script>
+    <script type="text/javascript" src="_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="_static/karelUI.js"></script>
+    <script type="text/javascript" src="_static/karel.js"></script>
+    <script type="text/javascript" src="_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/notes.js"></script>
+    <script type="text/javascript" src="_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="_static/blockly/blockly_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/blocks_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/python_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/msg-sr.js"></script>
+    <script type="text/javascript" src="_static/blockpy/utilities.js"></script>
+    <script type="text/javascript" src="_static/blockpy/python_errors.js"></script>
+    <script type="text/javascript" src="_static/blockpy/ast_node_visitor.js"></script>
+    <script type="text/javascript" src="_static/blockpy/abstract_interpreter.js"></script>
+    <script type="text/javascript" src="_static/blockpy/pytifa.js"></script>
+    <script type="text/javascript" src="_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script type="text/javascript" src="_static/blockpy/python_to_blockly.js"></script>
+    <script type="text/javascript" src="_static/blockpy/imported.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/class.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/comment.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/comprehensions.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/dict.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/if.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/io.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/lists.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/sets.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/loops.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/parking.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/tuple.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/turtles.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/text.js"></script>
+    <script type="text/javascript" src="_static/blockpy-modal.js"></script>
+    <script type="text/javascript" src="_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="_static/rangy-core.js"></script>
+    <script type="text/javascript" src="_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="_static/user-highlights.js"></script>
+    <script type="text/javascript" src="_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Grananje" href="Grananje.html" />
+    <link rel="prev" title="Promenljive" href="Promenljive.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Scratch3int';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'Scratch3int';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '_images/';
+  eBookConfig.staticDir = '_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="./">Blokovsko programiranje u Skreču</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-8 col-md-offset-2" id="main-content">
+  
+  <div class="section" id="ponavljanje">
+<h1>Ponavljanje<a class="headerlink" href="#ponavljanje" title="Permalink to this headline">¶</a></h1>
+<p>Već smo pomenuli da je ponavljanje jedne ili više naredbi (blokova) moćan kocept u programiranju. Kada se neke naredbe programa izvršavaju više puta kažemo da program sadrži <strong>ponavljanja (cikluse)</strong>. Do sada smo, već nekoliko puta, koristili ovaj koncept.</p>
+<p>U Skreču, na raspolaganju imamo 3 vrste blokova za ponavljanje naredbi:</p>
+<ul class="simple">
+<li><p>Blok koji ponavlja naredbe tačno određeni broj puta;</p></li>
+<li><p>Blok koji ponavlja naredbe beskonačan broj puta;</p></li>
+<li><p>Blok koji ponavlja naredbe sve dok ne bude ispunjen određeni uslov.</p></li>
+</ul>
+<p>U njih se umeću blokovi čije izvršavanje treba da se ponovi.</p>
+<div class="section" id="blok-koji-ponavlja-naredbe-tacno-odredeni-broj-puta">
+<h2>Blok koji ponavlja naredbe tačno određeni broj puta<a class="headerlink" href="#blok-koji-ponavlja-naredbe-tacno-odredeni-broj-puta" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/Repeat101.png" class="align-center" src="_images/Repeat101.png" />
+<p>Blok koji ponavlja naredbe tačno određeni broj puta upotrebili smo u programu <em>Farma</em> (detaljnije u lekciji Izgled).</p>
+<p>Naše pile simuliralo je pokrete kljucanja tako što je 10 puta smenjivalo kostime a, b i c. Nakon ove simulacije, pile je uvećavalo veličinu za 10. Namera nam je bila da se pile uveća za 50, pa smo 5 puta ponovili uvećanje za 10. Da bismo postigli opisano ponašanje, koristili smo blokove <img alt="Repeat10a" src="_images/Repeat10a.png" /> i <img alt="Repeat5" src="_images/Repeat5.png" />.</p>
+<p>Na donjoj slici umanjili smo deo skripte koji se odnosi na ponavljanje naredbi i napravili isti program bez upotrebe blokova za ponavljanje. Skripta je zaista dugačka, pa smo, radi preglednosti, morali da je podelimo u pet stubaca.</p>
+<a class="reference internal image-reference" href="_images/PileBezRepeat.png"><img alt="_images/PileBezRepeat.png" class="align-center" src="_images/PileBezRepeat.png" style="width: 1200px;" /></a>
+<p><img alt="Uradi" src="_images/Uradi.png" /> Napravi i ti program <em>Farma</em> bez korišćenja blokova za ponavljanje. Uporedi kod sa našim. Verujemo da uočavaš da nizanje identičnih grupa blokova čini program dužim, težim za razumevanje i nadograđivanje.</p>
+</div>
+<div class="section" id="blok-koji-ponavlja-naredbe-beskonacan-broj-puta">
+<h2>Blok koji ponavlja naredbe beskonačan broj puta<a class="headerlink" href="#blok-koji-ponavlja-naredbe-beskonacan-broj-puta" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/RepeatF.png" class="align-center" src="_images/RepeatF.png" />
+<p>Ovaj blok za ponavljanje naredbi izvršava se beskonačan broj puta. Njegovo izvršavanje nikada se ne prekida samostalno. Prekidamo ga klikom na dugme za prestanak rada programa (crveno dugme pored zelene zastavice) ili korišćenjem jednog od blokova <img alt="StopAll" src="_images/StopAll.png" /> / <img alt="StopTS" src="_images/StopTS.png" /> / <img alt="StopOS" src="_images/StopOS.png" />, iz kategotije <strong>Upravljanje (Control)</strong>.</p>
+<p>Blok koji ponavlja naredbe beskonačan broj puta koristili smo u programu <em>Ide maca oko tebe</em> (detaljnije u lekciji Kretanje).</p>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="PonavljanjeZ1">
+            <p>Q-7: Analiziraj izgled blokova za ponavljanje naredbi. Uočljivo je da blok za beskonačno ponavljanje nema mogućnost povezivanja sa drugim blokovima, na njega se ne može dodati nijedan blok. Zašto?</p>
+
+            <li data-component="answer"  id="PonavljanjeZ1_opt_a">U sam blok se mogu dodati novi blokovi, pa nema potrebe da se skripta nastavlja.</li><li data-component="feedback" id="PonavljanjeZ1_opt_a">Mogućnost dodavanja novih blokova u sam blok |RepeatF| ne pruža mogućnost nizanja skripti koje se neće ponavljati, već samo dodaje naredbe koje će se beskonačno puta izvršavati.</li>
+            
+            <li data-component="answer"  id="PonavljanjeZ1_opt_b">U pitanju je greška u Skreču. Blok za beskonačno ponavljanje naredbi morao bi da ima mogućnost nastavka ređenja skripti.</li><li data-component="feedback" id="PonavljanjeZ1_opt_b">Koliko je verovatno da je jedan od najčešće korišćenih blokova u Skreču pogrešno koncipiran? Predlažemo ti da još jednom razmisliš o pitanju i daš novi odgovor.</li>
+            
+            <li data-component="answer" data-correct id="PonavljanjeZ1_opt_c">Dalje dodavanje blokova je besmisleno zato što oni nikada ne bi bili izvršeni.</li><li data-component="feedback" id="PonavljanjeZ1_opt_c">Odlično zaključuješ, bravo!</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="blok-koji-ponavlja-naredbe-sve-dok-ne-bude-ispunjen-odredeni-uslov">
+<h2>Blok koji ponavlja naredbe sve dok ne bude ispunjen određeni uslov<a class="headerlink" href="#blok-koji-ponavlja-naredbe-sve-dok-ne-bude-ispunjen-odredeni-uslov" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/RepeatU.png" class="align-center" src="_images/RepeatU.png" />
+<p>Ovaj blok za ponavljanje naredbi izvršava se sve dok ne bude ispunjen određeni uslov. Skripte unutar ovog bloka izvršavaju se na osnovu ispitivanja tačnosti uslova koji se u blok postavlja. Ovaj blok koristimo kada ne znamo koliko je puta potrebno izvršiti naredbe unutar bloka za ponavljanje i zato želimo da se one izvršavaju sve dok ne bude ispunjen određeni uslov.</p>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="PonavljanjeZ2">
+            <p>Q-8: Želiš da napraviš program u kome tvoj lik (protivgradni top) ispaljuje rakete na gradonosne oblake sve dok mu nivo energije ne padne ispod određene vrednosti. Koji blok za ponavljanje naredbi ćeš koristiti?</p>
+
+            <li data-component="answer"  id="PonavljanjeZ2_opt_a">Blok koji ponavlja naredbe tačno određeni broj puta.</li><li data-component="feedback" id="PonavljanjeZ2_opt_a">Ako odabereš ovaj blok, ispaljivanje raketa nema nikakve veze sa nivoom energije tvog lika, zar ne?</li>
+            
+            <li data-component="answer"  id="PonavljanjeZ2_opt_b">Blok koji ponavlja naredbe beskonačan broj puta.</li><li data-component="feedback" id="PonavljanjeZ2_opt_b">Ako odabereš ovaj blok, ispaljivanje raketa nema nikakve veze sa nivoom energije tvog lika, zar ne?</li>
+            
+            <li data-component="answer" data-correct id="PonavljanjeZ2_opt_c">Blok koji ponavlja naredbe sve dok ne bude ispunjen određeni uslov.</li><li data-component="feedback" id="PonavljanjeZ2_opt_c">U pravu si! Broj ponavljanja zavisi od ispunjenosti uslova. Onog trenutka kada nivo energije tvog lika padne ispod određene vrednosti, ispaljivanje raketa biće zaustavljeno.</li>
+            
+
+            </ul>
+            </div>
+            <p>Demonstriraćemo način na koji <em>blok koji ponavlja naredbe sve dok ne bude ispunjen određeni uslov</em> funkcioniše - napravićemo program koji simulira tajmer, tj. odbrojava sekunde od unete vrednosti do nule.</p>
+<p>Za potrebe ovog programa definisaćemo promenljivu <img alt="VSec" src="_images/Vsec.png" /> koja će čuvati vrednost preostalih sekundi tokom odbrojavanja tajmera. Od korisnika ćemo tražiti da unese broj sekundi. Pokrenućemo odbrojavanje. Nakon isteka unetog vremena oglasiće se zvučni signal.</p>
+<p>Na donjoj slici je naš predlog koda programa sa komentarima koji ga pojašnjavaju. Programeri smatraju da je korisno komentarisati skripte i objasniti šta određeni blokovi rade. Кomentarisanjem olakšavamo drugim programerima da razumeju programe koje stvaramo, kao i da ih nadograđuju. Кomentar dodaješ desnim klikom na skriptu i odabirom opcije <strong>Dodaj komentar (Add comment)</strong>.</p>
+<img alt="_images/Tajmer.png" class="align-center" src="_images/Tajmer.png" />
+<p><img alt="Uradi" src="_images/Uradi.png" /> Program <em>Tajmer</em> nalazi se na adresi <a href="https://scratch.mit.edu/projects/326420353" target="_blank">https://scratch.mit.edu/projects/326420353</a>. Unapredi ga tako što ćeš dodati zvuk otkucavanja sata dok tajmer odbrojava sekunde.</p>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+        <li id="relations-prev" title='Previous chapter - Promenljive' data-toggle="tooltip"><a href="Promenljive.html">Previous chapter</a></li>
+    
+        <li id="relations-next" title='Next chapter - Grananje' data-toggle="tooltip"><a href="Grananje.html">Next chapter</a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Promenljive' data-toggle="tooltip"><a href="Promenljive.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Grananje' data-toggle="tooltip"><a href="Grananje.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="text-center">&copy; 2019 <a href="https://petlja.org">Petlja.org</a> 
+                  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align: text-bottom" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+                  
+                  (Created using  <a href="https://pypi.org/project/Sphinx/">Sphinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

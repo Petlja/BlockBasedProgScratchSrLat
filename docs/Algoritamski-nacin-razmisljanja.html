@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Кретање &#8212; Runestone Interactive Overview</title>
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="_static/notes.css" />
+    <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="_static/ubuntu.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/petlja.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/runestonebase.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="_static/codemirror.js"></script>
+    <script type="text/javascript" src="_static/xml.js"></script>
+    <script type="text/javascript" src="_static/css.js"></script>
+    <script type="text/javascript" src="_static/python.js"></script>
+    <script type="text/javascript" src="_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="_static/javascript.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_static/activecode.js"></script>
+    <script type="text/javascript" src="_static/clike.js"></script>
+    <script type="text/javascript" src="_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="_static/animationbase.js"></script>
+    <script type="text/javascript" src="_static/mchoice.js"></script>
+    <script type="text/javascript" src="_static/timedmc.js"></script>
+    <script type="text/javascript" src="_static/timed.js"></script>
+    <script type="text/javascript" src="_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/clickable.js"></script>
+    <script type="text/javascript" src="_static/timedclickable.js"></script>
+    <script type="text/javascript" src="_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="_static/pytutor.js"></script>
+    <script type="text/javascript" src="_static/codelens.js"></script>
+    <script type="text/javascript" src="_static/datafile.js"></script>
+    <script type="text/javascript" src="_static/dragndrop.js"></script>
+    <script type="text/javascript" src="_static/timeddnd.js"></script>
+    <script type="text/javascript" src="_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/fitb.js"></script>
+    <script type="text/javascript" src="_static/timedfitb.js"></script>
+    <script type="text/javascript" src="_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/matrixeq.js"></script>
+    <script type="text/javascript" src="_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="_static/parsons.js"></script>
+    <script type="text/javascript" src="_static/timedparsons.js"></script>
+    <script type="text/javascript" src="_static/poll.js"></script>
+    <script type="text/javascript" src="_static/reveal.js"></script>
+    <script type="text/javascript" src="_static/shortanswer.js"></script>
+    <script type="text/javascript" src="_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="_static/showEval.js"></script>
+    <script type="text/javascript" src="_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="_static/Blob.js"></script>
+    <script type="text/javascript" src="_static/karelCorner.js"></script>
+    <script type="text/javascript" src="_static/karelRobot.js"></script>
+    <script type="text/javascript" src="_static/karelWorld.js"></script>
+    <script type="text/javascript" src="_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="_static/karelUI.js"></script>
+    <script type="text/javascript" src="_static/karel.js"></script>
+    <script type="text/javascript" src="_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/notes.js"></script>
+    <script type="text/javascript" src="_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="_static/blockly/blockly_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/blocks_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/python_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/msg-sr.js"></script>
+    <script type="text/javascript" src="_static/blockpy/utilities.js"></script>
+    <script type="text/javascript" src="_static/blockpy/python_errors.js"></script>
+    <script type="text/javascript" src="_static/blockpy/ast_node_visitor.js"></script>
+    <script type="text/javascript" src="_static/blockpy/abstract_interpreter.js"></script>
+    <script type="text/javascript" src="_static/blockpy/pytifa.js"></script>
+    <script type="text/javascript" src="_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script type="text/javascript" src="_static/blockpy/python_to_blockly.js"></script>
+    <script type="text/javascript" src="_static/blockpy/imported.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/class.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/comment.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/comprehensions.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/dict.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/if.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/io.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/lists.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/sets.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/loops.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/parking.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/tuple.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/turtles.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/text.js"></script>
+    <script type="text/javascript" src="_static/blockpy-modal.js"></script>
+    <script type="text/javascript" src="_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="_static/rangy-core.js"></script>
+    <script type="text/javascript" src="_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="_static/user-highlights.js"></script>
+    <script type="text/javascript" src="_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Scratch3int';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'Scratch3int';
+  eBookConfig.runestone_version = '3.1.1';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://petlja.org/">Petlja</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Scratch 3 international</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-8 col-md-offset-2" id="main-content">
+  
+  <div class="section" id="id1">
+<h1>Кретање<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Сада, када познајеш радно окружење Скреча, умеш да креираш ликове и одредиш њихов положај на позорници, потребно је да научиш кака да их покрећеш користећи наредбе (блокове) из категорије <strong>Кретање</strong>. Употребљавајући ове блокове бићеш у ситуацији да направиш једноставне игрице и анимације.</p>
+<p>Разликујемо три врсте блокова намењих кретању ликова:</p>
+<ul class="simple">
+<li><p>Блокове за апсолутно кретање</p></li>
+<li><p>Блокове за релативно кретање</p></li>
+<li><p>Остале блокове за кретање</p></li>
+</ul>
+<div class="section" id="id2">
+<h2>Блокови за апсолутно кретање<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>У категорији <strong>Кретање</strong>, на располагању имаш 4 блока која омогућавају апсолутно кретање ликова.</p>
+<a class="reference internal image-reference" href="_images/AKBlokovi.png"><img alt="_images/AKBlokovi.png" class="align-center" src="_images/AKBlokovi.png" style="width: 387px;" /></a>
+<p>Употребљаваћеш их у ситуацијама када буде потребно да програмираш ликове тако да се крећу до тачно одређеног места (тачке) на позорници.</p>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p><strong>Појурила мачка миша…</strong></p>
+<p>Мачка се налази у центру позорнице, а миш у тачки <strong>(x:150 y:100)</strong>.</p>
+<a class="reference internal image-reference" href="_images/MM1a.png"><img alt="_images/MM1a.png" class="align-center" src="_images/MM1a.png" style="width: 400px;" /></a>
+<p>Подсећамо те да је позорница правоугаони простор ширине 480 и висине 360 корака (пиксела). Центар позорнице налази се у тачки <strong>(x:0 y:0)</strong>.</p>
+
+    </p></div></div>
+<p>Ако желиш да мачка улови миша довољно је употребиш блок <img alt="AK1" src="_images/AK1.png" />.</p>
+<blockquote>
+<div></div></blockquote>
+<a class="reference internal image-reference" href="_images/MM1a.png"><img alt="_images/MM1a.png" class="align-center" src="_images/MM1a.png" style="width: 500px;" /></a>
+<p>Ако желиш да лов траје, употреби блок <img alt="AK2" src="_images/AK2.png" />. Тиме обезбеђујеш да мачка клизи једну секунду од тачке <strong>(x:0 y:0)</strong> до тачке <strong>(x:150 y:100)</strong>.</p>
+<blockquote>
+<div></div></blockquote>
+<p>Употребом блокова <img alt="AK3" src="_images/AK3.png" /> и <img alt="AK4" src="_images/AK4.png" /> можеш да симулираш прикрадање мачке мишу:</p>
+<blockquote>
+<div></div></blockquote>
+<a class="reference internal image-reference" href="_images/MM34a.png"><img alt="_images/MM34a.png" class="align-center" src="_images/MM34a.png" style="width: 1000px;" /></a>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Дакле</span><span class="p">,</span> <span class="n">употребом</span> <span class="n">блокова</span> <span class="n">за</span> <span class="n">апсолутно</span> <span class="n">кретање</span> <span class="n">саопштаваш</span> <span class="n">лику</span> <span class="n">тачно</span> <span class="n">место</span> <span class="n">на</span> <span class="n">позорници</span> <span class="n">на</span> <span class="n">које</span> <span class="n">треба</span> <span class="n">да</span> <span class="n">оде</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Тачку у којој се лик тренутно налази (тренутну вредност <strong>x:</strong> и <strong>y:</strong>) увек можеш да видиш испод позорнице, у оквиру листе ликова.</p>
+<a class="reference internal image-reference" href="_images/XY.png"><img alt="_images/XY.png" class="align-center" src="_images/XY.png" style="width: 400px;" /></a>
+</div>
+<div class="section" id="id3">
+<h2>Блокови за релативно кретање<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id4">
+<h2>Остали блокови за кретање<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>У категорији <strong>Кретање</strong>, на располагању имаш још 4 блока која омогућавају кретање ликова.</p>
+<a class="reference internal image-reference" href="_images/OKBlokovi.png"><img alt="_images/OKBlokovi.png" class="align-center" src="_images/OKBlokovi.png" style="width: 387px;" /></a>
+<div class="section" id="id5">
+<h3>Питање 1<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+
+    <div data-level="1" style="display:none">
+
+    </div>
+<dl class="field-list simple">
+<dt class="field-odd">Питање</dt>
+<dd class="field-odd"><p>Следеће две скрипте приказују разговор два лика. Да ли је разговор добро усклађен?</p>
+</dd>
+</dl>
+<a class="reference internal image-reference" href="_images/AK1.png"><img alt="_images/AK1.png" class="align-center" src="_images/AK1.png" style="width: 750px;" /></a>
+
+    <div data-component="reveal" id="сакривање25"   data-showtitle="Упореди решење са нашим" data-hidetitle="Сакриј решење">
+    <p><strong>Одговор:</strong></p>
+
+    <div class="runestone" style="margin-left: auto; margin-right:auto">
+    <div id="tIP6veneYsI_vid"></div>
+    </div>
+    <script id="tIP6veneYsI_script">
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var ytScriptTag = document.getElementById('tIP6veneYsI_script');
+      ytScriptTag.parentNode.insertBefore(tag, ytScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('tIP6veneYsI_vid', {
+          height: '415',
+          width: '735',
+          videoId: 'tIP6veneYsI',
+          events: {
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+    </script>
+    <p>Нема паузе, што значи да су ликови причају истовремено Потребно је уметнути инструкције <code class="docutils literal notranslate"><span class="pre">чекај</span></code>.</p>
+
+    </div>
+    <p>Често се чини да су рачунари паметни. Морамо да те разочарамо – рачунари, још увек, не могу самостално да мисле! Рачунари су машине које следе упутства (наредбе) и тако обављају различите задатке.</p>
+<p>Наредбе рачунарима пишу људи, мали и велики програмери. <strong>Скупови наредби које рачунар извршава називају се програми.</strong></p>
+<p>Да би рачунар могао да ти помогне да брже и боље обављаш неки посао, мораш да га за то „обучиш“ - програмираш. Процес програмирања састоји се из две фазе:</p>
+<p>Прво, мораш добро да разумеш проблем који желиш да решиш. Мораш да га анализираш, а затим рашчланиш на мање, теби познате проблеме. Уз помоћ својих знања и искустава, треба да осмислиш упутство за његово решавање.</p>
+<p>Друго, језиком који рачунар разуме, мораш да му саопштиш како да решава проблем.</p>
+<p>Проблеми умеју да делују нерешиво, попут магије.</p>
+<p>Ксенија је споменула реч алгоритам. <strong>Алгоритам</strong> је низ корака који воде до решења неког проблема. Иако је деловало да Ксенија има пуно среће, у ствари се радило о врло прецизном низу корака које је она следила како би дошла до победе.</p>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="L1Algoritam">
+            <p>Q-100: Који алгоритам је Ксенија примењивала?</p>
+<a class="reference internal image-reference" href="../_images/L1_AlgoritamAB.png"><img alt="../_images/L1_AlgoritamAB.png" class="align-center" src="../_images/L1_AlgoritamAB.png" style="width: 873px;" /></a>
+
+            <li data-component="answer"  id="L1Algoritam_opt_a">Алгоритам А</li><li data-component="feedback" id="L1Algoritam_opt_a">Пажљиво прочитај кораке алгоритма А. Како Ксенија
+зна колико ће Мита коцкица да узме?</li>
+            
+            <li data-component="answer" data-correct id="L1Algoritam_opt_b">Алгоритам B</li><li data-component="feedback" id="L1Algoritam_opt_b">Имаш одлично запажање!</li>
+            
+
+            </ul>
+            </div>
+            <p>Примећујеш да је, у Ксенијином алгоритму, природа корака различита.</p>
+<ul class="simple">
+<li><p>Неки кораци се извршавају по редоследу како су наведени (у чинију ставити 17 коцкица и поводац, узети прву коцкицу);</p></li>
+<li><p>Неки кораци зависе од одређеног услова (Ако противник узме 1 коцкицу, узети 3 коцкице, …);</p></li>
+<li><p>Неки кораци се понављају (кораци 3, 4 и 5 понављају се 4 пута),</p></li>
+</ul>
+<p>Ток алгоритма је делом линијски (корак по корак), делом условљен (од потеза противника зависи Ксенијин потез) и цикличан (неки кораци се понављају).</p>
+<p>Да би оно што Ксенија зна знао и рачунар, мораш да му објаниш користећи неки од програмских језика.</p>
+<p>Програмски језици су углавном текстуални. То значи да мораш да куцаш наредбе у специфичном облику енглеског језика. На пример, ако користиш Python, наредба да рачунар на екрану испише „Узимам једну коцкицу.“ изгледа овако:
+<code class="docutils literal notranslate"><span class="pre">print</span> <span class="pre">(‘Uzimam</span> <span class="pre">jednu</span> <span class="pre">kockicu.’)</span></code></p>
+<p>Почетницима, програмски језици често делују сложено. Зато су осмишљени визуелни програмски језици. Они ти омогућавају да програмираш без куцања наредби, спајањем графичких блокова. Ух, и ово делује компликовано!</p>
+<p>Хајде да видимо како у програмском језику Scratch (чита се Скреч) изгледа исписивање реченице „Узимам једну коцкицу.“</p>
+<a class="reference internal image-reference" href="../_images/L1_BlokMacaKaze.png"><img alt="../_images/L1_BlokMacaKaze.png" class="align-center" src="../_images/L1_BlokMacaKaze.png" style="width: 197px;" /></a>
+<p>Када рачунар буде извшио ову наредбу, на екрану ће се појавити:</p>
+<a class="reference internal image-reference" href="../_images/L1_MacaKaze.png"><img alt="../_images/L1_MacaKaze.png" class="align-center" src="../_images/L1_MacaKaze.png" style="width: 221px;" /></a>
+<p>Симпатично, зар не?</p>
+<p>Знамо да немаш програмерско искуство у Scratch-у. Ипак, верујемо да ћеш моћи да одговориш на следећа питања.</p>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="L1P2">
+            <p>Q-101: На које кораке Ксенијиног алгоритма се односи следећи низ наредби?</p>
+<a class="reference internal image-reference" href="../_images/L1_P2L1.png"><img alt="../_images/L1_P2L1.png" class="align-center" src="../_images/L1_P2L1.png" style="width: 193px;" /></a>
+
+            <li data-component="answer" data-correct id="L1P2_opt_a">Кораке 1 и 2</li><li data-component="feedback" id="L1P2_opt_a">Браво! Изгледа да је програмирање заиста једноставно!</li>
+            
+            <li data-component="answer"  id="L1P2_opt_b">Кораке 1 и 3</li><li data-component="feedback" id="L1P2_opt_b">Хм. Шта се дешава у трећем кораку алгоритма? Размисли.</li>
+            
+            <li data-component="answer"  id="L1P2_opt_c">Кораке 2 и 3</li><li data-component="feedback" id="L1P2_opt_c">Хм. Шта се дешава у трећем кораку алгоритма? Размисли.</li>
+            
+
+            </ul>
+            </div>
+            
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="L1P3s">
+            <p>Q-102: Ова наредба делује сложеније. На који корак Ксенијиног алгоритма се она односи?</p>
+<a class="reference internal image-reference" href="../_images/L1_P3L1.png"><img alt="../_images/L1_P3L1.png" class="align-center" src="../_images/L1_P3L1.png" style="width: 213px;" /></a>
+
+            <li data-component="answer"  id="L1P3s_opt_a">Корак 3</li><li data-component="feedback" id="L1P3s_opt_a">Само полако! Размисли опет.</li>
+            
+            <li data-component="answer"  id="L1P3s_opt_b">Корак 4</li><li data-component="feedback" id="L1P3s_opt_b">Само полако! Размисли опет.</li>
+            
+            <li data-component="answer" data-correct id="L1P3s_opt_c">Корак 5</li><li data-component="feedback" id="L1P3s_opt_c">Браво! Већ препознајемо будућег програмера!</li>
+            
+
+            </ul>
+            </div>
+            <p>Програмирање треба да посматраш као нову врсту писања. Када овладаш техникама и логиком програмирања, моћи ћеш да „пишеш“ нове врсте „текста“ - интерактивне приче, игре, анимације и симулације.</p>
+<p>Рачунар је предвидљива машина. Радиће баш оно што му кажеш. Твој програм извршаваће се на потпуно исти начин на различитим рачунарима.</p>
+<p>Покушај да даш неко упутство другарицама и друговима. Видећеш да ће свако од њих, иако су добили прецизна упутства, задатак урадити на свој начин. На људе утичу њихове емоције, предзнање, искуство и још много чинилаца.</p>
+<p>Лепота програмирања лежи у могућности да машташ и, кроз стварање програма, оствариш своје снове. Рачунар, сам по себи, не рађа креативност, али помаже да се она чује далеко и одјекне громогласно!</p>
+</div>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+</ul>
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2017 Petlja (Created using <a href="http://runestoneinteractive.org/">Runestone</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

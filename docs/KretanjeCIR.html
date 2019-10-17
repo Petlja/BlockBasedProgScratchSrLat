@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Кретање &#8212; Runestone Interactive Overview</title>
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="_static/notes.css" />
+    <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="_static/ubuntu.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/petlja.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/runestonebase.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="_static/codemirror.js"></script>
+    <script type="text/javascript" src="_static/xml.js"></script>
+    <script type="text/javascript" src="_static/css.js"></script>
+    <script type="text/javascript" src="_static/python.js"></script>
+    <script type="text/javascript" src="_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="_static/javascript.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_static/activecode.js"></script>
+    <script type="text/javascript" src="_static/clike.js"></script>
+    <script type="text/javascript" src="_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="_static/animationbase.js"></script>
+    <script type="text/javascript" src="_static/mchoice.js"></script>
+    <script type="text/javascript" src="_static/timedmc.js"></script>
+    <script type="text/javascript" src="_static/timed.js"></script>
+    <script type="text/javascript" src="_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/clickable.js"></script>
+    <script type="text/javascript" src="_static/timedclickable.js"></script>
+    <script type="text/javascript" src="_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="_static/pytutor.js"></script>
+    <script type="text/javascript" src="_static/codelens.js"></script>
+    <script type="text/javascript" src="_static/datafile.js"></script>
+    <script type="text/javascript" src="_static/dragndrop.js"></script>
+    <script type="text/javascript" src="_static/timeddnd.js"></script>
+    <script type="text/javascript" src="_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/fitb.js"></script>
+    <script type="text/javascript" src="_static/timedfitb.js"></script>
+    <script type="text/javascript" src="_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/matrixeq.js"></script>
+    <script type="text/javascript" src="_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="_static/parsons.js"></script>
+    <script type="text/javascript" src="_static/timedparsons.js"></script>
+    <script type="text/javascript" src="_static/poll.js"></script>
+    <script type="text/javascript" src="_static/reveal.js"></script>
+    <script type="text/javascript" src="_static/shortanswer.js"></script>
+    <script type="text/javascript" src="_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="_static/showEval.js"></script>
+    <script type="text/javascript" src="_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="_static/Blob.js"></script>
+    <script type="text/javascript" src="_static/karelCorner.js"></script>
+    <script type="text/javascript" src="_static/karelRobot.js"></script>
+    <script type="text/javascript" src="_static/karelWorld.js"></script>
+    <script type="text/javascript" src="_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="_static/karelUI.js"></script>
+    <script type="text/javascript" src="_static/karel.js"></script>
+    <script type="text/javascript" src="_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/notes.js"></script>
+    <script type="text/javascript" src="_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="_static/blockly/blockly_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/blocks_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/python_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/msg-sr.js"></script>
+    <script type="text/javascript" src="_static/blockpy/utilities.js"></script>
+    <script type="text/javascript" src="_static/blockpy/python_errors.js"></script>
+    <script type="text/javascript" src="_static/blockpy/ast_node_visitor.js"></script>
+    <script type="text/javascript" src="_static/blockpy/abstract_interpreter.js"></script>
+    <script type="text/javascript" src="_static/blockpy/pytifa.js"></script>
+    <script type="text/javascript" src="_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script type="text/javascript" src="_static/blockpy/python_to_blockly.js"></script>
+    <script type="text/javascript" src="_static/blockpy/imported.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/class.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/comment.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/comprehensions.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/dict.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/if.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/io.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/lists.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/sets.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/loops.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/parking.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/tuple.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/turtles.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/text.js"></script>
+    <script type="text/javascript" src="_static/blockpy-modal.js"></script>
+    <script type="text/javascript" src="_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="_static/rangy-core.js"></script>
+    <script type="text/javascript" src="_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="_static/user-highlights.js"></script>
+    <script type="text/javascript" src="_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Scratch3int';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "unknown";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'Scratch3int';
+  eBookConfig.runestone_version = '3.1.1';
+</script>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://petlja.org/">Petlja</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Scratch 3 international</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-8 col-md-offset-2" id="main-content">
+  
+  <div class="section" id="id1">
+<h1>Кретање<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Сада, када познајеш радно окружење Скреча, умеш да креираш ликове и одредиш њихов положај на позорници, потребно је да научиш кака да их покрећеш користећи наредбе (блокове) из категорије <strong>Кретање</strong>. Употребљавајући ове блокове бићеш у ситуацији да направиш једноставне игрице и анимације.</p>
+<p>Разликујемо три врсте блокова намењих кретању ликова:</p>
+<ul class="simple">
+<li><p>Блокове за апсолутно кретање</p></li>
+<li><p>Блокове за релативно кретање</p></li>
+<li><p>Остале блокове за кретање</p></li>
+</ul>
+<div class="section" id="id2">
+<h2>Блокови за апсолутно кретање<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>У категорији <strong>Кретање</strong>, на располагању имаш 4 блока која омогућавају апсолутно кретање ликова.</p>
+<a class="reference internal image-reference" href="_images/AKBlokovi.png"><img alt="_images/AKBlokovi.png" class="align-center" src="_images/AKBlokovi.png" style="width: 840px;" /></a>
+<p>Употребљаваћеш их у ситуацијама када буде потребно да програмираш ликове тако да се крећу до <strong>тачно одређеног места (тачке) на позорници</strong>.</p>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p><strong>Појурила мачка миша…</strong></p>
+<p>Мачка се налази у центру позорнице, а миш у тачки <strong>(x:150 y:100)</strong>.</p>
+<a class="reference internal image-reference" href="_images/MM1a.png"><img alt="_images/MM1a.png" class="align-center" src="_images/MM1a.png" style="width: 400px;" /></a>
+<p>Подсећамо те да је позорница правоугаони простор ширине 480 и висине 360 корака (пиксела). Центар позорнице налази се у тачки <strong>(x:0 y:0)</strong>.</p>
+
+    </p></div></div>
+<p>Ако желиш да мачка улови миша довољно је употребиш блок <img alt="AK1" src="_images/AK1.png" />.</p>
+<blockquote>
+<div></div></blockquote>
+<a class="reference internal image-reference" href="_images/MM1a.png"><img alt="_images/MM1a.png" class="align-center" src="_images/MM1a.png" style="width: 500px;" /></a>
+<p>Ако желиш да лов траје, употреби блок <img alt="AK2" src="_images/AK2.png" />. Тиме обезбеђујеш да мачка клизи једну секунду од тачке <strong>(x:0 y:0)</strong> до тачке <strong>(x:150 y:100)</strong>.</p>
+<blockquote>
+<div></div></blockquote>
+<p>Употребом блокова <img alt="AK3" src="_images/AK3.png" /> и <img alt="AK4" src="_images/AK4.png" /> можеш да симулираш прикрадање мачке мишу:</p>
+<blockquote>
+<div></div></blockquote>
+<a class="reference internal image-reference" href="_images/MM34a.png"><img alt="_images/MM34a.png" class="align-center" src="_images/MM34a.png" style="width: 1000px;" /></a>
+<p>Тачку у којој се лик тренутно налази (тренутну вредност <strong>x:</strong> и <strong>y:</strong>) увек можеш да видиш испод позорнице, у оквиру листе ликова.</p>
+<a class="reference internal image-reference" href="_images/XY.png"><img alt="_images/XY.png" class="align-center" src="_images/XY.png" style="width: 400px;" /></a>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">E:\git_petlja\Scratch3_prirucnik_international\_sources\KretanjeCIR.rst</span>, line 63)</p>
+<p>Duplicate ID – see Kretanje, line 67</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. mchoice:: AKZadatak1
+   :answer_a: Програм А
+   :answer_b: Програм B
+   :feedback_a: Браво! Мачка је &quot;ухватила&quot; све мишеве!
+   :feedback_b: Хм.. Саветујемо ти да проучиш лекцију Положај лика на позорници.
+   :correct: a
+
+   Анализирај положај мишева на слици и означи програм који ће омогућити мачки да &quot;улови&quot; све мишеве.
+
+   .. image:: ../_images/AKZ1.png
+      :width: 870px
+      :align: center
+
+</pre></div>
+</div>
+</div>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p><img alt="Vazno" src="_images/Vazno.png" />   <strong>Дакле, употребом блокова за апсолутно кретање саопштаваш лику тачно место на позорници на које треба да стигне.</strong></p>
+<blockquote>
+<div></div></blockquote>
+
+    </p></div></div>
+</div>
+<div class="section" id="id3">
+<h2>Блокови за релативно кретање<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Релативно кретање није одређено местом у које лик треба да стигне, већ тренутним положајем лика.</p>
+<p>У категорији <strong>Кретање</strong>, на располагању имаш неколико блокова која омогућавају релативно кретање.</p>
+<a class="reference internal image-reference" href="_images/RKBlokovi.png"><img alt="_images/RKBlokovi.png" class="align-center" src="_images/RKBlokovi.png" style="width: 900px;" /></a>
+<p>У примеру у коме је мачка јурила миша знали смо тачан положај миша (тачку у којој се налази). Много су чешће ситуације у којима не знамо тачан положај ликова. У тим случајевима ликове покрећемо коришћењем блокова за релативно кретање.</p>
+<p>Код релативног кретања јако је важно да усмеримо (окренемо) лик у страну у коју желимо да се креће. То постижемо повлачењем стрелице по кругу блока <img alt="RKS2" src="_images/RKS2.png" />.</p>
+<p>Добро је да знаш да у Скречу усмерење ка 0 представља усмерење нагоре, ка 90 удесно, ка 180 надоле, а ка -90 улево.</p>
+<blockquote>
+<div></div></blockquote>
+<a class="reference internal image-reference" href="_images/RKS1.png"><img alt="_images/RKS1.png" class="align-center" src="_images/RKS1.png" style="width: 800px;" /></a>
+<p>Тренутно усмерење лика увек можеш да видиш испод позорнице, у оквиру листе ликова, у пољу <strong>Смер</strong>.</p>
+<a class="reference internal image-reference" href="_images/XY.png"><img alt="_images/XY.png" class="align-center" src="_images/XY.png" style="width: 400px;" /></a>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">E:\git_petlja\Scratch3_prirucnik_international\_sources\KretanjeCIR.rst</span>, line 112)</p>
+<p>Duplicate ID – see Kretanje, line 116</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. mchoice:: RKZadatak1
+   :answer_a: Смер: 90 (десно) Положај: (x:50 y:-100)
+   :answer_b: Смер: 180 (доле) Положај: (x:50 y:100)
+   :feedback_a: Анализирај програм поново. Да ли окретање за 90 степени мења усмерење лика?
+   :feedback_b: Браво! Добро уочаваш кретање лика!
+   :correct: b
+
+   Анализирај програм на слици и означи усмерење лика, као и његов положај након извршавања програма.
+
+   .. image:: ../_images/RKZ1.png
+      :width: 280px
+      :align: center
+</pre></div>
+</div>
+</div>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p><img alt="Vazno" src="_images/Vazno.png" />   <strong>Дакле, употребом блокова за релативно кретање саопштаваш лику где треба да се усмери и креће у односу на његов тренутни положај.</strong></p>
+
+    </p></div></div>
+</div>
+<div class="section" id="id4">
+<h2>Остали блокови за кретање<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>У категорији <strong>Кретање</strong>, на располагању имаш још 4 блока која омогућавају кретање ликова.</p>
+<a class="reference internal image-reference" href="_images/OKBlokovi.png"><img alt="_images/OKBlokovi.png" class="align-center" src="_images/OKBlokovi.png" style="width: 387px;" /></a>
+<p>Позорница је ограничен простор. Када лик стигне до ивице (каже се и руба) позорнице, природно је да се окрене и наставни кретање у другом правцу или смеру. Такво понашање лика обезбеђујеш коришћењем блока <img alt="OK3" src="_images/OK3.png" />.</p>
+<blockquote>
+<div></div></blockquote>
+<p>Начин на који ће лик наставити кретање зависи од тебе. Ако, у оквиру блока <img alt="OK4a" src="_images/OK4a.png" /> подесиш да се лик окреће на <strong>све стране</strong>, он ће наставнити кретање окренут наглавачке. Ово се неће догодити ако из падајуће листе блока одабереш лево-десно <img alt="OK4b" src="_images/OK4b.png" />.</p>
+<blockquote>
+<div></div></blockquote>
+<a class="reference internal image-reference" href="_images/OKRub12.png"><img alt="_images/OKRub12.png" class="align-center" src="_images/OKRub12.png" style="width: 1000px;" /></a>
+<p>Тренутни начин кретања лика (<strong>На све стране</strong> <img alt="OKSS" src="_images/OKSS.png" />, <strong>Лево/десно</strong> <img alt="OKLD" src="_images/OKLD.png" /> или <strong>Без окретања</strong> <img alt="OKBO" src="_images/OKBO.png" />) увек можеш да видиш испод позорнице, у оквиру листе ликова, кликом у поље <strong>Смер</strong>.</p>
+<blockquote>
+<div></div></blockquote>
+<a class="reference internal image-reference" href="_images/XY.png"><img alt="_images/XY.png" class="align-center" src="_images/XY.png" style="width: 400px;" /></a>
+<p>Вратимо се на наше ликове: <img alt="macka" src="_images/macka.png" /> и <img alt="mis" src="_images/mis.png" />.</p>
+<p>Ако не знамо тачан положај миша, а желимо да мачка буде усмерена на њега (окренута ка њему), можемо да употребимо блок <img alt="OK1" src="_images/OK1.png" />. Довољно је да из падајуће листе одаберемо лик Миш <img alt="OK1a" src="_images/OK1a.png" /> и проблем је решен.</p>
+<blockquote>
+<div></div></blockquote>
+<p>Показаћемо ти на примеру како функционишу последња два блока.</p>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p><strong>Појурила мачка миша…</strong></p>
+<p>Мачка јури миша, клизећи ка њему. Миш се непрестано окреће и иде ка курсору, који ми померамо по позорници.</p>
+<a class="reference internal image-reference" href="_images/OKPR1.png"><img alt="_images/OKPR1.png" class="align-center" src="_images/OKPR1.png" style="width: 800px;" /></a>
+<p>Изнад сваког од ликова налазе се скрипте које обезбеђују описано понашање.</p>
+
+    </p></div></div>
+<div class="section" id="id5">
+<h3>Унапреди горњи програм<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<dl class="field-list simple">
+<dt class="field-odd">Задатак</dt>
+<dd class="field-odd"><p>Унапреди горњи програм тако што ћеш додати још један лик - јабуку.
+Нека миш јури јабуку, а мачка миша. Нека се јабука креће ка курсору (којим ми управљамо), миш према јабуци, мачка према мишу.</p>
+</dd>
+</dl>
+<a class="reference internal image-reference" href="_images/MMJ.png"><img alt="_images/MMJ.png" class="align-center" src="_images/MMJ.png" style="width: 400px;" /></a>
+
+    <div data-component="reveal" id="сакривањеКретање"   data-showtitle="Упореди решење са нашим" data-hidetitle="Сакриј решење">
+    <p><strong>Могуће решење:</strong></p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<span class="docutils literal">E:\git_petlja\Scratch3_prirucnik_international\_sources\KretanjeCIR.rst</span>, line 204)</p>
+<p>Duplicate ID – see Kretanje, line 208</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">youtube</span><span class="p">::</span> <span class="n">QgCCzBw6DKU</span>
+   <span class="p">:</span><span class="n">width</span><span class="p">:</span> <span class="mi">735</span>
+   <span class="p">:</span><span class="n">height</span><span class="p">:</span> <span class="mi">415</span>
+   <span class="p">:</span><span class="n">align</span><span class="p">:</span> <span class="n">center</span>
+</pre></div>
+</div>
+</div>
+
+    </div>
+    </div>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+</ul>
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2017 Petlja (Created using <a href="http://runestoneinteractive.org/">Runestone</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

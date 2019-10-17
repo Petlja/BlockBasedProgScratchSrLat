@@ -1,0 +1,99 @@
+Izgled i zvuk
+=============
+
+Likovi u Skreču poseduju jedan ili više kostima. Mogućnost da menjamo kostime omogućava nam da stvaramo interesantne programe i animacije. U tu svrhu koristimo blokove iz kategorije **Izgled (Looks)**.
+
+Razmišljanje, govor, promena veličine lika, promena kostima
+-----------------------------------------------------------
+
+Napravićemo program Farma koji sadrži dva lika - devojku (Avery) i pile (Chick). Smestićemo ih u ambijent farme (pozadina Farm). Postavićemo pile devojci u ruku. Devojka će "hraniti" pile i gledati kako raste.
+
+.. image:: ../_images/izgled/Farma.png
+   :width: 900px   
+   :align: center
+
+Krenućemo od skripti devojke. U njenom slučaju želimo da:
+
+1. Njena veličina bude upola veća od originalne (150%);
+2. Pomisli "Divno... (So cute...)"
+3. Izgovori "Samo napred! (Go, go!)"
+
+Pile ćemo postaviti u ruku devojke. U njegovom slučaju želimo da:
+
+1. Njegova veličina bude upola manja od originalne (50%);
+2. Simulira pokrete kljucanja;
+3. Tokom izvršavanja programa uvećava veličinu.
+
+.. image:: ../_images/izgled/KodFarma.png
+   :width: 1200px   
+   :align: center
+
+.. reveal:: sakrivanjeFarma
+   :showtitle: Pogledaj video-uputstvo za kreiranje programa Farma
+   :hidetitle: Sakrij video-uputstvo
+ 
+   **Pogledaj proces izrade programa koji omogućava likovima da misle, govore, menjaju veličinu i kostime:**
+     
+   .. youtube:: QgCCzBw6DKU
+      :width: 735
+      :height: 415
+      :align: center
+
+Kako što vidiš, za kreiranje programa Farma koristili smo nekoliko blokova iz kategorije **Izgled (Looks)**:
+
+•	Podešavali smo veličinu likova pomoću bloka |Size|;
+•	Menjali smo veličinu likova pomoću bloka |SizeBy|;
+•	Prikazali smo misli lika pomoću bloka |Think2s|;
+•	Prikazali smo govor lika pomoću bloka |Say2s|;
+•	Menjali smo kostime pomoću bloka |Switch|.
+  
+.. |Size| image:: ../_images/izgled/Size.png
+.. |SizeBy| image:: ../_images/izgled/SizeBy.png
+.. |Think2s| image:: ../_images/izgled/Think2s.png
+.. |Say2s| image:: ../_images/izgled/Say2s.png
+.. |Switch| image:: ../_images/izgled/Switch.png
+
+Pored navedenih, za funkcionisanje našeg programa od presudne važnosti bio je blok |Repeat10|. Ponavljanje je moćan koncept koji čini kod kraćim, program preglednijim i olakšava ispravljanje grešaka. Ponavljanjem smo omogućili da se pile "kreće", tj. obezbedili ponavljanje naredbi smenjivanja kostima. Blokovi za ponavljanje nalaze se u kategoriji **Upravljanje (Control)**. Ova kategorija sadrži važne blokove kojima kontrolišemo tok programa.
+
+  .. |Repeat10| image:: ../_images/izgled/Repeat10.png
+
+|Uradi| Napravi program koji simulira rad semafora. **Mala pomoć**: Svetla na semaforu ne smenjuju se istom brzinom. Crveno i zeleno svetlo svetle duže od žutog.
+
+  .. |Uradi| image:: ../_images/Uradi.png
+
+.. reveal:: sakrivanjeSemafor
+   :showtitle: Pogledaj video-uputstvo za kreiranje programa Semafor
+   :hidetitle: Sakrij video-uputstvo
+ 
+   **Pogledaj proces izrade programa koji omogućava simulaciju rada semafora:**
+     
+   .. youtube:: QgCCzBw6DKU
+      :width: 735
+      :height: 415
+      :align: center
+
+.. mchoice:: IZadatak1
+   :answer_a: On obezbeđuje da misli lika ne nestaju sa pozornice.
+   :answer_b: On obezbeđuje da se misli lika neprestano smenjuju.
+   :feedback_a: Potpuno si u pravu!    
+   :feedback_b: Da bi se misli neprestano ponavljale neophodno je da koristiš odgovarajući blok za ponavljanje naredbi prikaza misli lika.
+   :correct: a
+
+   Skrećemo ti pažnju na postojanje blokova koji izvršavaju naredbe slične onima koje smo prikazali. Tako, blok |Say| obezbeđuje da govor lika ne nestaje sa pozornice. Pretpostavljamo da možeš da zaključiš šta je rezultat izvršavanja bloka |Think|.
+
+   .. |Say| image:: ../_images/izgled/Say.png
+   .. |Think| image:: ../_images/izgled/Think.png
+
+Osim navedenih, kategorija **Izgled (Looks)** sadrži još nekoliko blokova. 
+
+Kako što možemo da biramo kostime lika, tako možemo da biramo i pozadinu pozornice korišćenjem bloka |SwBcdrop|. 
+
+   .. |SwBcdrop| image:: ../_images/izgled/SwBcdrop.png
+   
+  Veoma korisni su i blokovi koji nam omogućavaju da lik prikažemo |Show| ili sakrijemo |Hide|. Ove blokove koristićemo u poglavljima koja slede.
+
+   .. |Show| image:: ../_images/izgled/Show.png
+   .. |Hide| image:: ../_images/izgled/Hide.png
+
+   Prepuštamo ti da otkriješ kako možeš da se igraš koloritom likova koristeći blokove:
+
