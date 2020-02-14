@@ -1,6 +1,6 @@
 ---
 title: Blokovsko programiranje za 5. razred osnovne škole - Scratch
-author: Nevenka Spalević
+author: Katarina Aleksić
 thumb: media/scratch.png
 ---
 
