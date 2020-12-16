@@ -12,16 +12,16 @@ sys.path.append(os.getcwd())
 home_dir = os.getcwd()
 master_url = 'http://127.0.0.1:8000'
 master_app = 'runestone'
-serving_dir = "./build/Scratch3int"
+serving_dir = "./_build/Scratch3int"
 dest = "../../static"
 
 options(
     sphinx = Bunch(docroot=".",),
 
     build = Bunch(
-        builddir="./build/Scratch3int",
+        builddir="./_build/Scratch3int",
         sourcedir="_sources",
-        outdir="./build/Scratch3int",
+        outdir="./_build/Scratch3int",
         confdir=".",
         project_name = "Scratch3int",
         template_args={'course_id': 'Scratch3int',
@@ -43,8 +43,7 @@ options(
     )
 )
 
-version = pkg_resources.require("runestone")[0].version
-options.build.template_args['runestone_version'] = version
+
 
 # If DBURL is in the environment override dburl
 options.build.template_args['dburl'] = get_dburl(outer=locals())
