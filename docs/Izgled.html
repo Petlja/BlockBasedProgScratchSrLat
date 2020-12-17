@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr_RS">
   <head>
     <meta charset="utf-8" />
-    <title>Izgled &#8212; Blokovsko programiranje u Skreču</title>
+<title>Izgled &#8212; Blokovsko programiranje u Skreču</title>
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
@@ -124,6 +124,7 @@
     <script type="text/javascript" src="_static/blockpy/blocks/turtles.js"></script>
     <script type="text/javascript" src="_static/blockpy/blocks/text.js"></script>
     <script type="text/javascript" src="_static/blockpy-modal.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
     <script type="text/javascript" src="_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="_static/jquery-fix.js"></script>
     <script type="text/javascript" src="_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
@@ -160,7 +161,7 @@
   eBookConfig.useRunestoneServices = false;
   eBookConfig.python3 = false;
   eBookConfig.basecourse = 'Scratch3int';
-  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.runestone_version = '';
   eBookConfig.imagesDir = '_images/';
   eBookConfig.staticDir = '_static/';
   if(typeof(Sk) != "undefined")
@@ -201,20 +202,20 @@
 
 <div class="container col-md-12" id="continue-reading"></div>
 
-<div class="container col-md-8 col-md-offset-2" id="main-content">
+<div class="container col-md-8 col-md-offset-2" id="main-content" style="margin-top: 70px;">
   
   <div class="section" id="izgled">
 <h1>Izgled<a class="headerlink" href="#izgled" title="Permalink to this headline">¶</a></h1>
 <p>Likovi u Skreču poseduju jedan ili više kostima. Mogućnost da menjamo kostime omogućava nam da stvaramo interesantne programe i animacije. U tu svrhu koristimo blokove iz kategorije <strong>Izgled (Looks)</strong>.</p>
 <div class="section" id="razmisljanje-govor-promena-velicine-lika-promena-kostima">
 <h2>Razmišljanje, govor, promena veličine lika, promena kostima<a class="headerlink" href="#razmisljanje-govor-promena-velicine-lika-promena-kostima" title="Permalink to this headline">¶</a></h2>
-<p>Napravićemo program Farma koji sadrži dva lika - devojku (Avery) i pile (Chick). Smestićemo ih u ambijent farme (pozadina Farm). Postavićemo pile devojci u ruku. Devojka će “hraniti” pile i gledati kako raste.</p>
+<p>Napravićemo program Farma koji sadrži dva lika - devojku (Avery) i pile (Chick). Smestićemo ih u ambijent farme (pozadina Farm). Postavićemo pile devojci u ruku. Devojka će „hraniti” pile i gledati kako raste.</p>
 <a class="reference internal image-reference" href="_images/Farma.png"><img alt="_images/Farma.png" class="align-center" src="_images/Farma.png" style="width: 900px;" /></a>
 <p>Krenućemo od skripti devojke. U njenom slučaju želimo da:</p>
 <ol class="arabic simple">
 <li><p>Njena veličina bude upola veća od originalne (150%);</p></li>
-<li><p>Pomisli “Divno… (So cute…)”</p></li>
-<li><p>Izgovori “Samo napred! (Go, go!)”</p></li>
+<li><p>Pomisli „Divno… (So cute…)”</p></li>
+<li><p>Izgovori „Samo napred! (Go, go!)”</p></li>
 </ol>
 <p>Pile ćemo postaviti u ruku devojke. U njegovom slučaju želimo da:</p>
 <ol class="arabic simple">
@@ -262,7 +263,7 @@
 <li><p>Prikazali smo govor lika pomoću bloka <img alt="Say2s" src="_images/Say2s.png" />;</p></li>
 <li><p>Menjali smo kostime pomoću bloka <img alt="Switch" src="_images/Switch.png" />.</p></li>
 </ul>
-<p>Pored navedenih, za funkcionisanje našeg programa od presudne važnosti bio je blok <img alt="Repeat10" src="_images/Repeat10.png" />. Ponavljanje je moćan koncept koji čini kod kraćim, program preglednijim i olakšava ispravljanje grešaka. Ponavljanjem smo omogućili da se pile “kreće”, tj. obezbedili ponavljanje naredbi smenjivanja kostima. Blokovi za ponavljanje nalaze se u kategoriji <strong>Upravljanje (Control)</strong>. Ova kategorija sadrži važne blokove kojima kontrolišemo tok programa.</p>
+<p>Pored navedenih, za funkcionisanje našeg programa od presudne važnosti bio je blok <img alt="Repeat10" src="_images/Repeat10.png" />. Ponavljanje je moćan koncept koji čini kod kraćim, program preglednijim i olakšava ispravljanje grešaka. Ponavljanjem smo omogućili da se pile „kreće”, tj. obezbedili ponavljanje naredbi smenjivanja kostima. Blokovi za ponavljanje nalaze se u kategoriji <strong>Upravljanje (Control)</strong>. Ova kategorija sadrži važne blokove kojima kontrolišemo tok programa.</p>
 <p><img alt="Uradi" src="_images/Uradi.png" /> Napravi program koji simulira rad semafora. <strong>Mala pomoć</strong>: Svetla na semaforu ne smenjuju se istom brzinom. Crveno i zeleno svetlo svetle duže od žutog.</p>
 
     <div data-component="reveal" id="sakrivanjeSemafor"   data-showtitle="Pogledaj video-uputstvo za kreiranje programa Semafor" data-hidetitle="Sakrij video-uputstvo">
@@ -319,9 +320,9 @@
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Blokovi' data-toggle="tooltip"><a href="Blokovi.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Blokovi' data-toggle="tooltip"><a href="Blokovi.html">Претходно поглавље</a></li>
     
-        <li id="relations-next" title='Next chapter - Zvuk' data-toggle="tooltip"><a href="Zvuk.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Zvuk' data-toggle="tooltip"><a href="Zvuk.html">Следеће поглавље</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
@@ -347,10 +348,7 @@
         <div class="text-center">
             <hr>
             <p class="text-muted">
-                <span class="text-center">&copy; 2019 <a href="https://petlja.org">Petlja.org</a> 
-                  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align: text-bottom" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
-                  
-                  (Created using  <a href="https://pypi.org/project/Sphinx/">Sphinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
             </p>
         </div>
     </div>

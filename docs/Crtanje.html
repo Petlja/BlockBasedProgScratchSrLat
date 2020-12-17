@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr_RS">
   <head>
     <meta charset="utf-8" />
-    <title>Crtanje &#8212; Blokovsko programiranje u Skreču</title>
+<title>Crtanje &#8212; Blokovsko programiranje u Skreču</title>
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
@@ -124,6 +124,7 @@
     <script type="text/javascript" src="_static/blockpy/blocks/turtles.js"></script>
     <script type="text/javascript" src="_static/blockpy/blocks/text.js"></script>
     <script type="text/javascript" src="_static/blockpy-modal.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
     <script type="text/javascript" src="_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="_static/jquery-fix.js"></script>
     <script type="text/javascript" src="_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
@@ -160,7 +161,7 @@
   eBookConfig.useRunestoneServices = false;
   eBookConfig.python3 = false;
   eBookConfig.basecourse = 'Scratch3int';
-  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.runestone_version = '';
   eBookConfig.imagesDir = '_images/';
   eBookConfig.staticDir = '_static/';
   if(typeof(Sk) != "undefined")
@@ -201,7 +202,7 @@
 
 <div class="container col-md-12" id="continue-reading"></div>
 
-<div class="container col-md-8 col-md-offset-2" id="main-content">
+<div class="container col-md-8 col-md-offset-2" id="main-content" style="margin-top: 70px;">
   
   <div class="section" id="crtanje">
 <h1>Crtanje<a class="headerlink" href="#crtanje" title="Permalink to this headline">¶</a></h1>
@@ -214,11 +215,11 @@
 <img alt="_images/BlokoviOlovka.png" class="align-center" src="_images/BlokoviOlovka.png" />
 <p>Inicijalno, olovka lika je podignuta. <strong>Da bi crtanje bilo moguće, neophodno je da olovku spustimo.</strong></p>
 <div class="section" id="crtanje-slobodnom-rukom">
-<h2>Crtanje “slobodnom rukom”<a class="headerlink" href="#crtanje-slobodnom-rukom" title="Permalink to this headline">¶</a></h2>
+<h2>Crtanje „slobodnom rukom”<a class="headerlink" href="#crtanje-slobodnom-rukom" title="Permalink to this headline">¶</a></h2>
 <p>Kada pomislimo na crtanje slobodnom rukom, obično zamislimo kako crtamo olovkom. Zato ćemo, u program koji simulira ovaj oblik crtanja koristiti lik <a class="reference internal" href="_images/LikOlovka.png"><img alt="LikOlovka" src="_images/LikOlovka.png" style="width: 70px;" /></a>, koji se nalazi u biblioteci likova.</p>
-<p>Likovi u Skreču crtaju svojim centrom. Kako bi naša olovka crtala “grafitnim vrhom”, moramo da promenimo poziciju centra lika. To činimo u okviru kartice <strong>Kostimi (Costumes)</strong>.</p>
+<p>Likovi u Skreču crtaju svojim centrom. Kako bi naša olovka crtala „grafitnim vrhom”, moramo da promenimo poziciju centra lika. To činimo u okviru kartice <strong>Kostimi (Costumes)</strong>.</p>
 <p>VIDEO - CENTAR LIKA</p>
-<p>Kada smo razmatrali načine kretanja lika po pozornici, predstavili smo blok <img alt="OK1" src="_images/OK1.png" />. Ako beskonačan broj puta (<em>Forever</em>) ponovimo izvršavanje ovog bloka, lik će se neprestano kretati po pozornici tako što će pratiti kursor miša. Dakle, upotrebom ovog bloka možemo da simuliramo crtanje - pomerajući kursor miša po pozornici “crtaćemo” po pozornici.</p>
+<p>Kada smo razmatrali načine kretanja lika po pozornici, predstavili smo blok <img alt="OK1" src="_images/OK1.png" />. Ako beskonačan broj puta (<em>Forever</em>) ponovimo izvršavanje ovog bloka, lik će se neprestano kretati po pozornici tako što će pratiti kursor miša. Dakle, upotrebom ovog bloka možemo da simuliramo crtanje - pomerajući kursor miša po pozornici „crtaćemo” po pozornici.</p>
 <p>Analiziraj sledeće skripte:</p>
 <img alt="_images/KodSR.png" class="align-center" src="_images/KodSR.png" />
 <p><img alt="Uradi" src="_images/Uradi.png" /> Napravi program koji omogućava crtanje slobodnom rukom i obezbedi da se, pritiskom na taster <strong>s</strong> izvršavanje programa zaustavi. Potraži odgovarajuće blokove u kategorijama <strong>Događaji (Events)</strong> i <strong>Upravljanje (Control)</strong>.</p>
@@ -266,9 +267,9 @@
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Kretanje' data-toggle="tooltip"><a href="Kretanje.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Kretanje' data-toggle="tooltip"><a href="Kretanje.html">Претходно поглавље</a></li>
     
-        <li id="relations-next" title='Next chapter - Procedure' data-toggle="tooltip"><a href="Procedure.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Procedure' data-toggle="tooltip"><a href="Procedure.html">Следеће поглавље</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
@@ -294,10 +295,7 @@
         <div class="text-center">
             <hr>
             <p class="text-muted">
-                <span class="text-center">&copy; 2019 <a href="https://petlja.org">Petlja.org</a> 
-                  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align: text-bottom" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
-                  
-                  (Created using  <a href="https://pypi.org/project/Sphinx/">Sphinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
             </p>
         </div>
     </div>

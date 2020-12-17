@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr_RS">
   <head>
     <meta charset="utf-8" />
-    <title>Zvuk &#8212; Blokovsko programiranje u Skreču</title>
+<title>Zvuk &#8212; Blokovsko programiranje u Skreču</title>
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
@@ -124,6 +124,7 @@
     <script type="text/javascript" src="_static/blockpy/blocks/turtles.js"></script>
     <script type="text/javascript" src="_static/blockpy/blocks/text.js"></script>
     <script type="text/javascript" src="_static/blockpy-modal.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
     <script type="text/javascript" src="_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="_static/jquery-fix.js"></script>
     <script type="text/javascript" src="_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
@@ -160,7 +161,7 @@
   eBookConfig.useRunestoneServices = false;
   eBookConfig.python3 = false;
   eBookConfig.basecourse = 'Scratch3int';
-  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.runestone_version = '';
   eBookConfig.imagesDir = '_images/';
   eBookConfig.staticDir = '_static/';
   if(typeof(Sk) != "undefined")
@@ -201,7 +202,7 @@
 
 <div class="container col-md-12" id="continue-reading"></div>
 
-<div class="container col-md-8 col-md-offset-2" id="main-content">
+<div class="container col-md-8 col-md-offset-2" id="main-content" style="margin-top: 70px;">
   
   <div class="section" id="zvuk">
 <h1>Zvuk<a class="headerlink" href="#zvuk" title="Permalink to this headline">¶</a></h1>
@@ -209,8 +210,8 @@
 <p>Skreč raspolaže bogatom bibliotekom zvukova, kako i mogućnošću da snimimo sopstveni glas ili učitamo zvučni zapis sa svog računara u .wav ili .mp3 formatu. Blokovi nakon čijeg izvršavanja čujemo zvuk nalaze se u kategoriji <strong>Zvuk (Sound)</strong>.</p>
 <div class="section" id="oglasavanje-likova">
 <h2>Oglašavanje likova<a class="headerlink" href="#oglasavanje-likova" title="Permalink to this headline">¶</a></h2>
-<p>Unapredićemo program <em>Farma (Farm)</em>, koji se nalazi na adresi <a href="https://scratch.mit.edu/projects/326422653/" target="_blank">https://scratch.mit.edu/projects/326422653/</a>, tako da devojka (Avery) zaista izgovori “Samo napred! (Go, go!)”, a pile (Chick) zacvrkuće nakon dobrog obroka.</p>
-<p>Prvu aktivnost predstavlja snimanje zvuka - našeg glasa: snimićemo i u skriptu devojke dodati zvučni zapis našeg izgovora teksta: “Samo napred! (Go, go!)”.</p>
+<p>Unapredićemo program <em>Farma (Farm)</em>, koji se nalazi na adresi <a href="https://scratch.mit.edu/projects/326422653/" target="_blank">https://scratch.mit.edu/projects/326422653/</a>, tako da devojka (Avery) zaista izgovori „Samo napred! (Go, go!)”, a pile (Chick) zacvrkuće nakon dobrog obroka.</p>
+<p>Prvu aktivnost predstavlja snimanje zvuka - našeg glasa: snimićemo i u skriptu devojke dodati zvučni zapis našeg izgovora teksta: „Samo napred! (Go, go!)”.</p>
 <p>Snimanje zvuka</p>
 <p>Pre nego što izvedemo aktivnost snimanja zvuka, moramo da:</p>
 <ul class="simple">
@@ -221,7 +222,7 @@
 <img alt="_images/Avery.png" class="align-center" src="_images/Avery.png" />
 <p>Otvorio se prozor <strong>Record Sound</strong>, u okviru koga otpočinjemo snimanje zvuka.</p>
 <ol class="arabic simple">
-<li><p>Kliknemo da crveno dugme i izgovorimo rečenicu: “Samo napred! (Go, go!)”;</p></li>
+<li><p>Kliknemo da crveno dugme i izgovorimo rečenicu: „Samo napred! (Go, go!)”;</p></li>
 <li><p>Preslušamo snimak klikom na dugme <strong>Play</strong> i, ako smo zadovoljni, kliknemo na dugme <strong>Save</strong>, a ako nismo, na dugme <strong>Re-record</strong> i ponovimo proces;</p></li>
 <li><p>U kartici Zvuk (Sound) pojaviće se vizuelni prikaz našeg snimka;</p></li>
 <li><p>U kategoriji Zvuk (Sound) pojaviće se blokovi koji omogućavaju da se, tokom izvršavanja programa naš glas čuje.</p></li>
@@ -255,7 +256,7 @@
 <p>Bez obzira na to koji jezik govore, uspavanka Frère Jacques poznata je ljudima iz celog sveta. Ako ti je pesma nepoznata, potraži je na YouTube-u, a mi ćemo ti pomoći da je komponuješ u Skreču.</p>
 <p>Kao instrument, izabraćemo električni klavir (1), a zatim ćemo povezati note tako da, izvršavanjem programa zasvira ova čuvena uspavanka.</p>
 <img alt="_images/FJ.png" class="align-center" src="_images/FJ.png" />
-<p><img alt="Uradi" src="_images/Uradi.png" /> Remiksuj projekat <em>Frère Jacques</em> koji se nalazi na adresi <a href="https://scratch.mit.edu/projects/326431999/" target="_blank">https://scratch.mit.edu/projects/326431999/</a> i dodaj blokove koji će doprineti “punoći zvuka” (bubnjeve ili ritam sekciju). Koristi instrumente iz padajuće liste bloka <img alt="Drums" src="_images/Drums.png" />. Koristeći odgovarajući blok iz kategorije <strong>Zvuk (Sound)</strong> pojačaj čujnost svake od strofa za po 10.</p>
+<p><img alt="Uradi" src="_images/Uradi.png" /> Remiksuj projekat <em>Frère Jacques</em> koji se nalazi na adresi <a href="https://scratch.mit.edu/projects/326431999/" target="_blank">https://scratch.mit.edu/projects/326431999/</a> i dodaj blokove koji će doprineti „punoći zvuka” (bubnjeve ili ritam sekciju). Koristi instrumente iz padajuće liste bloka <img alt="Drums" src="_images/Drums.png" />. Koristeći odgovarajući blok iz kategorije <strong>Zvuk (Sound)</strong> pojačaj čujnost svake od strofa za po 10.</p>
 <dl class="simple">
 <dt><img alt="Izazov" src="_images/Izazov.png" /> Pokušaj da otpavaš pesmu Frère Jacques bez muzike i snimiš je. Dodaj je u Skreč program <strong>Frère Jacques</strong>. Sigurni smo da će to biti interesantan aranžman!</dt><dd></dd>
 </dl>
@@ -266,9 +267,9 @@
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Izgled' data-toggle="tooltip"><a href="Izgled.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Izgled' data-toggle="tooltip"><a href="Izgled.html">Претходно поглавље</a></li>
     
-        <li id="relations-next" title='Next chapter - Kretanje' data-toggle="tooltip"><a href="Kretanje.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Kretanje' data-toggle="tooltip"><a href="Kretanje.html">Следеће поглавље</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
@@ -294,10 +295,7 @@
         <div class="text-center">
             <hr>
             <p class="text-muted">
-                <span class="text-center">&copy; 2019 <a href="https://petlja.org">Petlja.org</a> 
-                  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align: text-bottom" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
-                  
-                  (Created using  <a href="https://pypi.org/project/Sphinx/">Sphinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
             </p>
         </div>
     </div>
